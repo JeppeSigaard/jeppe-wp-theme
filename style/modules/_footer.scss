@@ -1,0 +1,11 @@
+.site-footer{
+	min-height:480px;
+	background:$jeppe-black;
+	position:relative;
+	z-index:1;
+
+
+	@media only screen and(min-width:960px){
+		margin-right:$site-nav-width;
+	}
+}

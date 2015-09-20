@@ -1,3 +1,9 @@
+<!----------------------------:-:
+:-:                           :-:
+:-:       hej@jeppe.io        :-:
+:-:                           :-:
+:-:----------------------------->
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -6,3 +12,6 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php get_template_part('template-parts/header/top','nav'); ?>
+<?php get_template_part('template-parts/header/site','header'); ?>
+<?php get_template_part('template-parts/side/site','nav'); ?>

@@ -1,0 +1,34 @@
+$site-nav-width:280px;
+
+.site-nav{
+	position:absolute;
+	background:$jeppe-light-2;
+	width:$site-nav-width;
+	height:calc(100vh + #{$top-nav-height});
+	right:-$site-nav-width;
+	top:0;
+	z-index:5;
+	padding-top:$header-height + $top-nav-height;
+	padding-left:$base-margin/2;
+	transition:right 120ms;
+	box-shadow:$base-shadow;
+
+ 	@media only screen and(min-width:480px){
+		padding-left:$base-margin;
+ 	}
+
+ 	@media only screen and(min-width:960px){
+ 		right:0;
+		box-shadow:none;
+ 	}
+
+}
+
+.menu-out .site-nav{
+	right:0;
+}
+
+.fixed .site-nav{
+		position:fixed;
+		padding-top:$header-height;
+	}

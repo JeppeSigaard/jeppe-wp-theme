@@ -5,7 +5,8 @@ function smartmonkey_load_scripts()
 {
 	// Stylesheets
 	// wp_enqueue_style( 'dashicons');
-    wp_enqueue_style('source-sans-pro', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600',false,false,'all');
+    wp_enqueue_style('slackey', '//fonts.googleapis.com/css?family=Slackey',false,false,'all');
+    wp_enqueue_style('open-sans', '//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700',false,false,'all');
     wp_enqueue_style( 'main', get_template_directory_uri().'/style/main.css', false, false, 'all' );
 
 	// Scripts

@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+// FONT
+$base-font: 'Open Sans', sans-serif;
+$base-font-weight: 400;
+$base-font-weight-2: 600;
+$base-font-weight-3: 700;
+$text-margin:.7em;
+
+$base-font-size: 15px;
+$base-font-size-480: 15px;
+$base-font-size-640: 16px;
+$base-font-size-960: 16px;
+$base-line-height:1.5;
+
+
+// Højde bredde basic
+$base-margin:20px;
+$page-width-max:1280px;
+$read-width-max:640px;
+
+
+
+// Farver
+$jeppe-black: #333333;
+$jeppe-black-2: #000000;
+
+$jeppe-light: #f5f8f8;
+$jeppe-light-2: #f0f2f2;
+$jeppe-light-3: #e0e3e3;
+$jeppe-white: #ffffff;
+
+$jeppe-color-red: #E13215;
+$jeppe-color-yellow: #b8bc4e;
+$jeppe-color-green: #58b47b;
+$jeppe-color-blue: #1563e1;
+
+
+// Skygge
+
+$base-shadow: 1px 1px 2px 0px rgba($jeppe-black,.2) ;
