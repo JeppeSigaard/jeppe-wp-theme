@@ -1,4 +1,4 @@
-<div id="site-nav" class="site-nav">
+<nav id="site-nav" class="site-nav">
 	<div class="inner">
 		<div class="site-nav-part profile">
 		</div>
@@ -13,4 +13,4 @@
 			)); ?>
 		</div>
 	</div>
-</div>
+</nav>

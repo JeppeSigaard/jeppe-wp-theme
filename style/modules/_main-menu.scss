@@ -1,7 +1,7 @@
 .main-menu{
 	margin:-$base-margin;
 
-	a{
+	li a{
 		height:45px;
 		line-height:45px;
 		display: block;
@@ -9,17 +9,18 @@
 		font-size: 80%;
 		text-transform: uppercase;
 		font-weight:600;
-		transition:color 120ms;
+		transition:color 120ms, background-color 120ms;
 		color:$jeppe-light;
 
 		&:hover{
 			color:$anchor-hover-color;
+			background-color:rgba(255,255,255,.9)!important;
 		}
 
 	}
 
 	@for $i from 0 through 20{
-		$amount : .02 * $i;
+		$amount : .03 * $i;
 		li:nth-of-type(#{$i}) a{
 			background-color: rgba(255,255,255,$amount);
 		}

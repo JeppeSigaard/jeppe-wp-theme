@@ -41,18 +41,21 @@
 	@media only screen and(min-width:1024px){
 		font-size: 200%;
 		line-height: 1.7;
+	}
+
+	@media only screen and(min-width:1280px){
 		bottom:50px;
 	}
 
 	h1{
 		display: inline;
-		padding: 5px $base-margin/2;
+		padding: 6px $base-margin/2;
 		box-decoration-break: clone;
 		background-color: $jeppe-light;
 		box-shadow: $base-shadow;
 
 		@media only screen and(min-width:480px){
-			padding: 5px $base-margin;
+			padding: 6px $base-margin;
 		}
 	}
 }

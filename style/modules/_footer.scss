@@ -9,3 +9,21 @@
  		border:none;
  	}
 }
+
+.footer-legal{
+
+	text-align: center;
+	height:50px;
+	line-height: 50px;
+	color: lighten($jeppe-black,40);
+	background:$jeppe-black;
+	text-transform: uppercase;
+	font-size: 75%;
+	position:absolute;
+	bottom:0;
+	width:100%;
+
+	span{
+		margin:0px 20px;
+	}
+}
