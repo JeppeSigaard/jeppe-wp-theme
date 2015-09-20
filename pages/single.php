@@ -1,17 +1,21 @@
-<section class="section-prime">
-	<div class="inner read-width">
-		<?php while (have_posts()) : the_post(); ?>
-		<article <?php post_class('post-preview'); ?>>
-			<header class="post-header">
-				<?php the_title('<h1 class="post-title">','</h1>'); ?>
-				<div class="post-meta">
-					<strong><?php the_author(); ?></strong>
-					<span><?php the_modified_date(); ?></span>
-				</div>
-				<div class="post-lead"><?php the_excerpt(); ?></div>
-			</header>
+<?php while (have_posts()) : the_post(); ?>
+<article <?php post_class('post-preview'); ?>>
+	<header class="post-header">
+		<?php the_title('<div class="post-title"><h1>','</h1></div>'); ?>
+		<div class="post-meta">
+			<span><?php the_modified_date(); ?></span>
+		</div>
+	</header>
+	<section class="post-lead">
+		<div class="read-width">
+			<?php the_excerpt(); ?>
+		</div>
+	</section>
+	<section class="subsection post-content">
+		<div class="read-width">
 			<?php the_content(); ?>
-		</article>
-		<?php endwhile; ?>
-	</div>
-</section>
+		</div>
+	</section>
+
+</article>
+<?php endwhile; ?>

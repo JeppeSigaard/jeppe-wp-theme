@@ -17,23 +17,18 @@ body article{
         //line-height:1.2;
     }
 
-	.post-title,
-	.page-title{
-		font-size: 200%;
-        line-height:1.2;
-        font-weight:600;
-	}
-
     h2{
         font-size: 175%;
-        margin-bottom:$text-margin;
+      	margin-bottom:$text-margin;
+      	margin-top:$text-margin;
         line-height:1.2;
-        font-weight:600;
+        font-weight:700;
     }
 
     h3{
         font-size: 150%;
         margin-bottom:$text-margin;
+        margin-top:$text-margin;
         line-height:1.2;
         font-weight:600;
     }

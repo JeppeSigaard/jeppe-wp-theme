@@ -1,6 +1,18 @@
 .post-meta{
-	font-size:80%;
+	font-size:70%;
 	text-transform: uppercase;
-	margin-bottom: $base-margin;
-	margin-top: $base-margin/2;
+	position:absolute;
+	z-index:10;
+	width:100%;
+	background:$jeppe-light-3;
+	padding:0 $base-margin/2;
+	height:45px;
+	line-height: 45px;
+	bottom:0;
+	box-shadow: $base-shadow;
+
+	@media only screen and(min-width:480px){
+		padding:0 $base-margin;
+	}
+
 }

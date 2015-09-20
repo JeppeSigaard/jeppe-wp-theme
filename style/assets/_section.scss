@@ -1,12 +1,12 @@
 section{
-    padding:30px $base-margin/2 50px;
+    padding:30px $base-margin/2 40px;
 
 	.inner{
 		padding:$base-margin/2;
 	}
 
     @media only screen and(min-width:480px){
-        padding:50px $base-margin/2 70px;
+        padding:50px $base-margin 60px;
 
     }
 

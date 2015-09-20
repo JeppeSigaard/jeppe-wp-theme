@@ -23,8 +23,9 @@ $header-height:60px;
 	}
 
 	ul{
-		float:right;
+		position: absolute;
 		top:0;
+		right:0;
 		font-size:0;
 
 		li{
@@ -71,17 +72,21 @@ $header-height:60px;
 	}
 }
 
-.site-header-logo{
+a.site-header-logo{
 	font-size: 200%;
+	display: inline-block;
 	height:$header-height;
-	line-height:$header-height;
-	font-family:'Slackey',sans-serif;
-	padding-left:$base-margin/2;
-	color:transparent;
-	text-shadow: 0px 0px 0px #e2f0ff, 2px 1px 0px #333, -2px -2px 0px #333;
+	line-height:$header-height + 6;
+	font-family:'Dimitri',sans-serif;
+	padding:0 $base-margin/2;
+	transition:color 120ms;
+
+	&:hover{
+		color:lighten($jeppe-color-blue,20);
+	}
 
 	@media only screen and(min-width:480px){
-		padding-left:$base-margin;
+		padding:0 $base-margin;
 	}
 
 }

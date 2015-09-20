@@ -1,4 +1,4 @@
-$site-nav-width:280px;
+$site-nav-width:300px;
 
 .site-nav{
 	position:absolute;
@@ -7,21 +7,24 @@ $site-nav-width:280px;
 	height:calc(100vh + #{$top-nav-height});
 	right:-$site-nav-width;
 	top:0;
-	z-index:5;
+	z-index:10;
 	padding-top:$header-height + $top-nav-height;
-	padding-left:$base-margin/2;
 	transition:right 120ms;
 	box-shadow:$base-shadow;
-
- 	@media only screen and(min-width:480px){
-		padding-left:$base-margin;
- 	}
+	overflow:hidden;
 
  	@media only screen and(min-width:960px){
  		right:0;
 		box-shadow:none;
  	}
 
+	.inner{
+		padding:$base-margin $base-margin 100px;
+	}
+
+	.site-nav-part{
+		padding:$base-margin 0;
+	}
 }
 
 .menu-out .site-nav{
