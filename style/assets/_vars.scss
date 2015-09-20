@@ -22,18 +22,25 @@ $read-width-max:640px;
 
 
 // Farver
-$jeppe-black: #333333;
+$jeppe-black: #324042;
 $jeppe-black-2: #000000;
+$jeppe-black-3: #455055;
 
-$jeppe-light: #f5f8f8;
-$jeppe-light-2: #f0f2f2;
-$jeppe-light-3: #e0e3e3;
+$jeppe-light: #fcfcfc;
+$jeppe-light-2: #f0f0f0;
+$jeppe-light-3: #e5e5e5;
 $jeppe-white: #ffffff;
 
 $jeppe-color-red: #ea492e;
 $jeppe-color-yellow: #c5cb35;
 $jeppe-color-green: #58b47b;
 $jeppe-color-blue: #2188e0;
+
+
+// Anchors
+
+$anchor-hover-color:$jeppe-color-red;
+$anchor-current-color:$anchor-hover-color;
 
 
 // Skygge

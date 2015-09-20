@@ -1,12 +1,12 @@
 html,body{
 
     font-family:$base-font;
-    background:$jeppe-light;
+    background:$jeppe-black;
     color:$jeppe-black;
     font-weight: $base-font-weight;
     @extend %font-size;
     box-sizing:border-box;
-    text-rendering: optimizeLegibility;
+    text-rendering: geometricPrecision;
     backface-visibility: hidden;
     -webkit-text-size-adjust: 100%;
     line-height: 1;
@@ -73,14 +73,6 @@ article{
 
 .read-width{
     max-width:640px;
-    @media only screen and(min-width:1280px){
-        max-width: 720px;
-    }
-
-     @media only screen and(min-width:1400px){
-        max-width: 750px;
-    }
-
     margin:auto;
 }
 

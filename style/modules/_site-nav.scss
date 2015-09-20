@@ -1,8 +1,8 @@
-$site-nav-width:300px;
+$site-nav-width:280px;
 
 .site-nav{
 	position:absolute;
-	background:$jeppe-light-2;
+	background:$jeppe-black;
 	width:$site-nav-width;
 	height:calc(100vh + #{$top-nav-height});
 	right:-$site-nav-width;
@@ -16,6 +16,10 @@ $site-nav-width:300px;
  	@media only screen and(min-width:960px){
  		right:0;
 		box-shadow:none;
+ 	}
+
+	@media only screen and(min-width:1280px){
+ 		width:25%;
  	}
 
 	.inner{
@@ -35,3 +39,19 @@ $site-nav-width:300px;
 		position:fixed;
 		padding-top:$header-height;
 	}
+
+@media only screen and(min-width:960px){
+
+	.menu-out .site-nav{
+
+ 		right:-$site-nav-width;
+ 	}
+}
+
+@media only screen and(min-width:1280px){
+
+	.menu-out .site-nav{
+
+ 		right:-25%;
+ 	}
+}

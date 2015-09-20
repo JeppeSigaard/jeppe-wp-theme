@@ -19,7 +19,6 @@ $header-height:60px;
 		position:relative;
 		z-index:100;
 		box-shadow: $base-shadow;
-		border-bottom:1px solid $jeppe-light-2;
 	}
 
 	ul{
@@ -42,8 +41,6 @@ $header-height:60px;
 			display: block;
 			border-left:1px solid $jeppe-light-3;
 
-
-
 			svg{
 				fill:$jeppe-black;
 				height:24px;
@@ -52,14 +49,32 @@ $header-height:60px;
 				left:($header-height - 14px) / 2;
 				position:relative;
 			}
+
+			.menu-close{
+				display: none;
+			}
 		}
 	}
 }
 
 @media only screen and(min-width:960px){
-	.site-header .inner .hamburger{
+	.site-header .inner svg.menu{
 		display: none;
 	}
+	.site-header .inner svg.menu-close{
+		display: block;
+	}
+
+	.menu-out .site-header .inner .hamburger{
+		svg.menu-close{
+			display: none;
+		}
+
+		svg.menu{
+			display: block;
+		}
+	}
+
 }
 
 .menu-out .site-header .hamburger,
@@ -69,6 +84,17 @@ $header-height:60px;
 
 	svg{
 		fill:$jeppe-light-3;
+	}
+
+}
+
+.menu-out .site-header .hamburger{
+	.menu-close{
+		display: block;
+	}
+
+	svg.menu{
+		display: none;
 	}
 }
 
@@ -82,7 +108,7 @@ a.site-header-logo{
 	transition:color 120ms;
 
 	&:hover{
-		color:lighten($jeppe-color-blue,20);
+		color:$anchor-hover-color;
 	}
 
 	@media only screen and(min-width:480px){

@@ -5,6 +5,7 @@
 			<li>
 				<a class="hamburger" href="my-belly-button">
 					<?php include get_template_directory().'/statics/icons/menu.svg'; ?>
+					<?php include get_template_directory().'/statics/icons/close.svg'; ?>
 				</a>
 			</li>
 		</ul>
