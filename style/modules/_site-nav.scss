@@ -3,7 +3,7 @@ $site-nav-width:280px;
 .site-nav{
 	position:absolute;
 	background:$jeppe-black;
-	width:$site-nav-width;
+	width:0;
 	height:calc(100vh + #{$top-nav-height});
 	right:-$site-nav-width;
 	top:0;
@@ -16,6 +16,7 @@ $site-nav-width:280px;
  	@media only screen and(min-width:960px){
  		right:0;
 		box-shadow:none;
+        width:$site-nav-width;
  	}
 
 	@media only screen and(min-width:1280px){
@@ -33,6 +34,7 @@ $site-nav-width:280px;
 
 .menu-out .site-nav{
 	right:0;
+    width:$site-nav-width;
 }
 
 .fixed .site-nav{
@@ -43,7 +45,7 @@ $site-nav-width:280px;
 @media only screen and(min-width:960px){
 
 	.menu-out .site-nav{
-
+        width:0;
  		right:-$site-nav-width;
  	}
 }
