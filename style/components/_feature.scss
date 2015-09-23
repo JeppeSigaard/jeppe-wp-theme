@@ -17,6 +17,11 @@
         box-shadow: $base-shadow;
     }
 
+	.post-header:before,
+	.post-header:after{
+		bottom:0;
+	}
+
     .post-title{
         bottom:0;
         margin-bottom: 0;
