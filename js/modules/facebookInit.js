@@ -10,7 +10,13 @@ var facebookInit = function(FB){
         if (previewParent.length){shareUrl = previewParent.find('a.post-header').attr('href');}
         else{shareUrl = window.location.href;}
         
-        FB.ui({method: 'send',link: shareUrl,});
+        
+        
+        FB.ui({
+            method: 'share',
+            href: shareUrl,
+            display: 'iframe'
+        });
     }});
     
 
