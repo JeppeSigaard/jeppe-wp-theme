@@ -18,7 +18,7 @@
 		height:20px;
 		@include center(true,true);
 		fill:$jeppe-black;
-		transition:fill 500ms;
+		transition:fill 250ms;
 	}
 
 
@@ -42,7 +42,7 @@
 			display: block;
 			background-color:transparent;
 			@extend %fill-all;
-			transition: background-color 120ms;
+			transition: background-color 250ms;
 		}
 
 
@@ -64,12 +64,8 @@
 			background-color:rgba(255,255,255,.4);
 		}
 
-		&.gp-share{
+		&.comment-link{
 			background-color:rgba(255,255,255,.6);
-		}
-
-		&.link-share{
-			background-color:rgba(255,255,255,.8);
 		}
 	}
 }

@@ -3,6 +3,7 @@ var facebookInit = function(FB){
     
     var fbshare = $('.fb-share');
     fbshare.off().on({click: function(e){
+        e.preventDefault();
         var t = $(e.target),
             previewParent = t.parents('.featured-article'),
             shareUrl;
