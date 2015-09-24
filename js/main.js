@@ -1,3 +1,4 @@
+// @koala-append 'modules/facebookInit.js';
 // @koala-append 'assets/facebook.js';
 // @koala-append 'modules/header.js';
 // @koala-append 'modules/toggle-fixed.js';

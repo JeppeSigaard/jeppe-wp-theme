@@ -4,6 +4,11 @@ window.fbAsyncInit = function() {
       xfbml      : true,
       version    : 'v2.4'
     });
+    
+    if(typeof facebookInit === 'function'){
+        facebookInit(FB);
+    }
+    
   };
 
 (function(d, s, id){
