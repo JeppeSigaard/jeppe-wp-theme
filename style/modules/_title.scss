@@ -3,9 +3,16 @@
     display: block;
     position:relative;
 	height:200px;
-	background:$jeppe-black url(../statics/img/triangles.jpg) no-repeat center;
 	background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
     overflow: hidden;
+    background-color:$jeppe-black;
+    
+    &[data-bg]{
+        background-size:32px;
+        background-image:url(../statics/icons/loading.svg);
+    }
 
     @media only screen and(min-width:480px){
  		height:240px;
