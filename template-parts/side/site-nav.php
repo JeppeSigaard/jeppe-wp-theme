@@ -1,7 +1,6 @@
 <nav id="site-nav" class="site-nav">
 	<div class="inner">
-		<div class="site-nav-part profile">
-		</div>
+		<?php //if (is_single()) : get_template_part('template-parts/side/author','box'); endif; ?>
 		<div class="site-nav-part main-menu">
 			<?php wp_nav_menu(array(
 				'theme-location' => 'main-menu',

@@ -1,11 +1,11 @@
 .feature{
     padding:0;
     background-color: darken($jeppe-light,2);
-    
+
     @media only screen and(min-width:480px){
         padding: $base-margin/2;
     }
-    
+
 }
 
 .featured-article {
@@ -16,28 +16,37 @@
     footer{
         box-shadow: $base-shadow;
     }
-    
+
+	.post-header:before,
+	.post-header:after{
+		bottom:0;
+	}
+
     .post-title{
         bottom:0;
         margin-bottom: 0;
         font-size: 125%;
         max-width:80%;
     }
-    
+
     .post-lead{
         padding:$base-margin/2;
         font-size:100%;
+<<<<<<< HEAD
         
         @media only screen and(min-width:480px){
             padding:$base-margin;
         }
         
+=======
+
+>>>>>>> origin/master
         .inner{
             max-width:none;
         }
     }
-    
-    
+
+
     footer{
         height:45px;
 
@@ -51,26 +60,26 @@
 }
 
 @media only screen and(min-width:640px){
-    
+
     .featured-article{
         width:50%;
         float:left;
-        
+
         .post-header{
             height:150px;
         }
-        
+
         .post-lead{
             height:160px;
             overflow:hidden;
         }
     }
-    
+
 }
 
 
 @media only screen and(min-width:1280px){
-    
+
     .featured-article{
         .post-header{
            padding-bottom:50%;
@@ -81,7 +90,7 @@
 
 
 @media only screen and(min-width:1600px){
-    
+
     .featured-article{
         .post-header{
             height:250px;
