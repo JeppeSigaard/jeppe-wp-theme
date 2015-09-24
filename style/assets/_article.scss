@@ -3,6 +3,10 @@ body article{
     .no-margin{
         @extend %no-margin;
     }
+    
+    section .inner{
+        padding:0;
+    }
 
 
     header{
