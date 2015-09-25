@@ -1,6 +1,6 @@
 <header id="site-header" class="site-header">
 	<div class="inner">
-		<a href="<?php bloginfo('url'); ?>" class="site-header-logo"><?php bloginfo('title') ?></a>
+		<a href="<?php bloginfo('url'); ?>" class="site-header-logo">jeppe.io</a>
 		<ul>
 			<li>
 				<a class="hamburger" href="my-belly-button">
