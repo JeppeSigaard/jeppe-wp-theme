@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     overflow: hidden;
     background-color:$jeppe-black;
-    
+
     &[data-bg]{
         background-size:32px;
         background-image:url(../statics/img/pacman.gif);
@@ -45,8 +45,7 @@
 
 }
 
-.post-title,
-.page-title{
+.post-title{
 	font-size: 150%;
 	line-height: 1.9;
 	font-weight:600;

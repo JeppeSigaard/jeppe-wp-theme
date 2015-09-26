@@ -1,11 +1,10 @@
-<!-------------------------------------------------------------:-:
-:-:                                                            :-:
-:-:                        hej@jeppe.io                        :-:
-:-:                                                            :-:
-:-:                  This theme is on Github:                  :-:
-:-:      https://github.com/JeppeSigaard/jeppe-wp-theme        :-:
-:-:                                                            :-:
-:-:-------------------------------------------------------------->
+<!-----------------------------------------------------:-:
+:-:                                                    :-:
+:-:                    hej@jeppe.io                    :-:
+:-:          Currently working @SmartMonkey            :-:
+:-:              https://smartmonkey.dk                :-:
+:-:                                                    :-:
+:-:------------------------------------------------------>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
