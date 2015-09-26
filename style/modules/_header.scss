@@ -7,6 +7,9 @@ $header-height:60px;
 		right:0;
 	}
 
+.no-anim .site-header ul a{
+	transition: background 0ms;
+}
 .site-header{
 	height:$header-height;
 	position:relative;
@@ -65,7 +68,7 @@ $header-height:60px;
 		display: block;
 	}
 
-	.menu-out .site-header .inner .hamburger{
+	.zen-mode .site-header .inner .hamburger{
 		svg.menu-close{
 			display: none;
 		}
@@ -78,6 +81,7 @@ $header-height:60px;
 }
 
 .menu-out .site-header .hamburger,
+.zen-mode .site-header .hamburger,
 .site-header .hamburger:hover{
 
 	background:$jeppe-black;

@@ -1,3 +1,6 @@
+.no-anim .site-content{
+	transition:margin-right 0ms;
+}
 .site-content{
 	position: relative;
 	min-height:calc(100vh - #{$header-height} - #{$top-nav-height} );
@@ -17,6 +20,7 @@
  	}
 }
 
-.menu-out .site-content{
+.menu-out .site-content,
+.zen-mode .site-content{
 	margin-right:0;
 }
