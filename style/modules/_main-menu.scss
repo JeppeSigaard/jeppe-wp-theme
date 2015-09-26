@@ -1,7 +1,7 @@
 .main-menu{
 	margin: -$base-margin;
 
-	li.no-nav{
+	li.no-nav a{
 		cursor: default;
 		background-color: rgba(255,255,255,.9)!important;
 		color: $anchor-hover-color;
