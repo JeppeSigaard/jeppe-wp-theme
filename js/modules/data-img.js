@@ -21,9 +21,8 @@ var loadDataImages = function(){
                 
                 // Apply the source to 'this', hide 'this' and fade it in
                 $img.removeAttr('data-bg').css({
-                    opacity:0,
                     backgroundImage: 'url('+$imgSrc+')',
-                }).animate({opacity:1},200);
+                });
             };
         });
         
@@ -39,7 +38,7 @@ var loadDataImages = function(){
             
             $imgPlaceholder.src = $imgSrc;
             $imgPlaceholder.onload = function(){
-                $img.css({opacity:0}).removeAttr('data-src').attr('src',$imgSrc).animate({opacity:1},200);
+                $img.removeAttr('data-src').attr('src',$imgSrc);
             };
         });
 

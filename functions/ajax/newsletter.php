@@ -99,21 +99,22 @@ function jio_ajax_newsletter(){
         exit;
     }
 
-    $MailChimp = new MailChimp('ba0b66dc16c9b1243fb3b398438407e7-us11');
+    $MailChimp = new MailChimp('441ab7ecd918ac4ba432faba058ab24f-us11');
     $result = $MailChimp->call('lists/subscribe', array(
         'id'                => 'f53e3e341b',
         'email'             => array('email'=>$email),
         'merge_vars'        => array('NAME'=>$name),
-        'double_optin'      => true,
+        'double_optin'      => false,
         'update_existing'   => true,
         'replace_interests' => false,
-        'send_welcome'      => true,
+        'send_welcome'      => false,
     ));
 
     $response['mailchimp'] = $result;
 
+	$response['destroy_self'] = '5000';
 
-    $response['success'] = '<h2 class="dimitri">Godt Gået!</h2><p>I dag har du taget en beslutning du aldrig vil fortryde</p>';
+    $response['success'] = '<h2 class="dimitri">Godt Gået!</h2><p>Vi høres ved inden længe. I mellemtiden er du velkommen til at kigge dig omkring her på min blog.</p>';
     echo json_encode($response);
     exit;
 }

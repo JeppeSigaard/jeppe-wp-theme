@@ -6,6 +6,9 @@ waitUntilExists("site-header",function(){
 			$('body').removeClass('no-anim');
 		},100);
 	}
+	else{
+		$('body').removeClass('zen-mode');
+	}
 })
 
 $(function(){
@@ -27,6 +30,8 @@ $(function(){
 			}
 
 			else{
+
+				$('body').removeClass('menu-out');
 
 				if($('body').hasClass('zen-mode')){
 					$('body').removeClass('zen-mode');
