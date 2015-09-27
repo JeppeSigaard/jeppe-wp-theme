@@ -1,5 +1,5 @@
 <section class="newsletter">
-	<div class="inner read-width">
+	<div class="read-width">
 		<form action="<?php echo admin_url( 'admin-ajax.php' ) ?>">
 			<input type="hidden" name="action" value="jio_new_member">
 			<h2 class="dimitri">Velkommen i klubben</h2>
