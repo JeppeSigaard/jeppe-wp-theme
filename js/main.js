@@ -6,6 +6,11 @@
 
 // @koala-append 'modules/twitterInit.js';
 
+
+// @koala-append 'assets/autosize.js';
+// @koala-append 'assets/styledselect.js';
+// @koala-append 'components/form.js';
+
 // @koala-append 'modules/header.js';
 // @koala-append 'modules/no-nav.js';
 // @koala-append 'modules/toggle-fixed.js';

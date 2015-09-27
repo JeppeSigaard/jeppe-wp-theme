@@ -8,3 +8,6 @@ require 'functions/images.php';
 require 'functions/menu.php';
 require 'functions/html5.php';
 require 'functions/stem-info.php';
+
+
+require 'functions/ajax/newsletter.php';

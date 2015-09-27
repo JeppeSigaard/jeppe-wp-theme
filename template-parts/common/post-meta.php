@@ -1,5 +1,5 @@
 <div class="post-meta">
-	<span><?php the_modified_date('d. M Y'); ?></span>
+	<span><?php echo get_the_date( 'd. M Y', get_the_ID() ); ?></span>
 	<ul class="post-meta-share">
 		<li><a href="#" class="fb-share">
 				<?php include get_template_directory().'/statics/icons/facebook.svg'; ?>
