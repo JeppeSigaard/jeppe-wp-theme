@@ -18,6 +18,10 @@
 	@media only screen and(min-width:1280px){
  		border:$base-margin solid darken($jeppe-light-3,2);
  	}
+
+    .pre{
+        margin:#{$base-line-height}em 0;
+    }
 }
 
 .menu-out .site-content,
