@@ -1,5 +1,6 @@
 // @koala-append 'assets/js.cookie.js';
 // @koala-append 'assets/waitUntilExists.js';
+// @koala-append 'assets/prism.js';
 
 // @koala-append 'modules/facebookInit.js';
 // @koala-append 'assets/facebook.js';
