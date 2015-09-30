@@ -14,7 +14,7 @@ get_template_part('template-parts/common/content','before');
 if(is_home() || is_front_page()){require 'templates/home.php';}
 
 //	Arkiver
-else if(is_archive()){require 'templates/archive.php';}
+else if(is_archive() || is_category() ){require 'templates/archive.php';}
 
 //	Sider (post type page, dvs. i princippet også CPT'er)
 else if(is_page()){require 'templates/page.php';}
