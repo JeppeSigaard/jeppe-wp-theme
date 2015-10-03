@@ -101,7 +101,7 @@ function jio_ajax_newsletter(){
 
     $MailChimp = new MailChimp('441ab7ecd918ac4ba432faba058ab24f-us11');
     $result = $MailChimp->call('lists/subscribe', array(
-        'id'                => 'f53e3e341b',
+        'id'                => '3f31ffc20a',
         'email'             => array('email'=>$email),
         'merge_vars'        => array('NAME'=>$name),
         'double_optin'      => false,
