@@ -39,4 +39,3 @@ if($zenmode && $zenmode === 'on'){
 <body <?php body_class($body_class); ?>>
 <?php get_template_part('template-parts/header/top','nav'); ?>
 <?php get_template_part('template-parts/header/site','header'); ?>
-<?php get_template_part('template-parts/side/site','nav'); ?>
