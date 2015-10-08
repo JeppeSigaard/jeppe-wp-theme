@@ -43,6 +43,7 @@ $header-height:60px;
 			transition: background 120ms;
 			display: block;
 			border-left:1px solid $jeppe-light-3;
+            outline: none;
 
 			svg{
 				fill:$jeppe-black;
@@ -53,7 +54,7 @@ $header-height:60px;
 				position:relative;
 			}
 
-			.menu-close{
+			.menu-close,.screen-full,.screen-normal{
 				display: none;
 			}
 		}
@@ -61,19 +62,20 @@ $header-height:60px;
 }
 
 @media only screen and(min-width:960px){
-	.site-header .inner svg.menu{
-		display: none;
-	}
-	.site-header .inner svg.menu-close{
+	.site-header .inner svg.screen-full{
 		display: block;
+	}
+	.site-header .inner svg.menu-close,
+    .site-header .inner svg.menu{
+		display: none;
 	}
 
 	.zen-mode .site-header .inner .hamburger{
-		svg.menu-close{
+		svg.screen-full{
 			display: none;
 		}
 
-		svg.menu{
+		svg.screen-normal{
 			display: block;
 		}
 	}

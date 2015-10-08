@@ -6,6 +6,8 @@
 				<a class="hamburger" href="#" nofollow tabindex="0">
 					<?php include get_template_directory().'/statics/icons/menu.svg'; ?>
 					<?php include get_template_directory().'/statics/icons/close.svg'; ?>
+					<?php include get_template_directory().'/statics/icons/expand.svg'; ?>
+					<?php include get_template_directory().'/statics/icons/contract.svg'; ?>
 				</a>
 			</li>
 		</ul>
