@@ -43,7 +43,7 @@ function smamo_add_stems( $wp_customize ) {
         'slug'=>'stem_email',
         'default' => '',
         'label' => __('Email', 'smamo'),
-        'type' => 'email',
+        'type' => 'option',
     );
 
     $fields[] = array(
