@@ -12,10 +12,12 @@ transition:right 0ms;
 	right:-$site-nav-width;
 	top:0;
 	z-index:10;
-	padding-top:$header-height + $top-nav-height;
+	padding: $header-height+$top-nav-height 0;
 	transition:right 120ms;
 	box-shadow:$base-shadow;
 	overflow:hidden;
+    transform: translate3d(0,0,0);
+    backface-visibility: hidden;
 
  	@media only screen and(min-width:960px){
  		right:0;
@@ -43,7 +45,7 @@ transition:right 0ms;
 
 .fixed .site-nav{
 		position:fixed;
-		padding-top:$header-height;
+		padding:$header-height 0;
 	}
 
 @media only screen and(min-width:960px){
