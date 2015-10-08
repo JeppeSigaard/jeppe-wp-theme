@@ -3,7 +3,7 @@
 		<a href="<?php bloginfo('url'); ?>" class="site-header-logo">jeppe.io</a>
 		<ul>
 			<li>
-				<a class="hamburger" href="my-belly-button">
+				<a class="hamburger" href="#" nofollow tabindex="0">
 					<?php include get_template_directory().'/statics/icons/menu.svg'; ?>
 					<?php include get_template_directory().'/statics/icons/close.svg'; ?>
 				</a>
