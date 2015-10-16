@@ -11,12 +11,6 @@
 .featured-article {
     padding:$base-margin/2;
 
-    .post-header,
-    .post-lead,
-    footer{
-        box-shadow: $base-shadow;
-    }
-
 	.post-header:before,
 	.post-header:after{
 		bottom:0;

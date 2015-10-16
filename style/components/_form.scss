@@ -421,3 +421,10 @@ form .box{
 		transform: scale(.95);
 	}
 }
+
+.form-error {
+    color: red;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
