@@ -1,8 +1,3 @@
-// Load images into placeholders
-// Use data-bg="" on any element to async load an image background
-// Use data-src="" on images to async load an image src
-
-
 var loadDataImages = function(){
     
     // For each background placeholder
@@ -27,8 +22,6 @@ var loadDataImages = function(){
         });
         
     
-        // Basically same thing with images
-        
         
         $('img[data-src]').each(function(e){
             

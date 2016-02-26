@@ -18,3 +18,12 @@
 // @koala-append 'modules/sync-scroll.js';
 // @koala-append 'modules/nav-to-comments.js';
 // @koala-append 'modules/data-img.js';
+
+$(function(){
+    $('body').addClass('ready');  
+    
+    $(window).load(function(){
+        
+         $('body').addClass('load');  
+    });
+});
