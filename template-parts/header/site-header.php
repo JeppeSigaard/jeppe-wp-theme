@@ -1,4 +1,4 @@
-<header id="site-header" class="site-header" role="directory">
+<header id="site-header" class="site-header">
 	<div class="inner">
 		<a href="<?php bloginfo('url'); ?>" class="site-header-logo">jeppe.io</a>
 		<ul>

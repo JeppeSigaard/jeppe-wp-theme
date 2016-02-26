@@ -1,0 +1,14 @@
+.single-tldr{
+    padding: $base-margin $base-margin $base-margin*2;
+    background: rgba(white,.3);
+    
+    h3{
+        font-size:150%;
+        font-weight: 900;
+        padding: 5px 0px 10px;
+    }
+    
+    .tldr-content{
+       @extend %article-font-style;
+    }
+}

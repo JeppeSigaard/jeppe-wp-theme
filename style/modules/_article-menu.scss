@@ -1,0 +1,21 @@
+.article-menu{
+    padding: $base-margin $base-margin $base-margin*2;
+    
+    a{
+        display: block;
+        padding:5px 0;
+        font-size:90%;
+        line-height: 1.2;
+        transition: color 120ms;
+        
+        &:hover{
+            color: $anchor-hover-color;
+        }
+    }
+    
+    .menu-header{
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size:150%;
+    }
+}

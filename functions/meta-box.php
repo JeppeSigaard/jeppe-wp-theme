@@ -6,6 +6,7 @@ function smamo_add_boxes(){
 
 // Your boxes or requires here
     require 'meta-box/comment-tease.php';
+    require 'meta-box/tldr.php';
     
     
 return $mb;
