@@ -1,6 +1,6 @@
 .single-tldr{
     padding: $base-margin $base-margin $base-margin*2;
-    background: rgba(white,.3);
+    background: rgba(white,.8);
     
     h3{
         font-size:150%;
@@ -10,5 +10,9 @@
     
     .tldr-content{
        @extend %article-font-style;
+        
+        a{
+            text-decoration: underline;
+        }
     }
 }
