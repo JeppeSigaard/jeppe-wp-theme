@@ -18,9 +18,6 @@ function makeNavItems(from,to,rep){
     from.find('h2,h3,h4,h5,h6').each(function(){
         
         count ++;
-        
-        
-        
         var elem = $(this),
             content = elem.html(),
             id = makeUrlFromString(content).substr(0, 10) + '-' + count;
@@ -46,7 +43,7 @@ function makeNavItems(from,to,rep){
     newMenu.on('click',function(e){
         e.preventDefault();
         var t = $(e.target);
-        if(t.is('a') && smamo_nav_fancy_manu_nav_animation_block === false){
+        if(t.is('a') && !smamo_nav_fancy_manu_nav_animation_block){
             
             smamo_nav_fancy_manu_nav_animation_block = true;
             
@@ -57,7 +54,7 @@ function makeNavItems(from,to,rep){
             setTimeout(function(){
                 smamo_nav_fancy_manu_nav_animation_block = false;
                 
-            },320);
+            },350);
            
             
         }

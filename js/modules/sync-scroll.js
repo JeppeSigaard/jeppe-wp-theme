@@ -4,7 +4,7 @@ $(function(){if($('.site-nav').length){
         fancyScroll = $('.site-nav');
 
     $(window).on('scroll', function () {
-      if(smamo_nav_fancy_manu_nav_animation_block === false){
+        console.log(lastScrollTop);
 
         var st = $(this).scrollTop(),
             diff = st - lastScrollTop,
@@ -12,7 +12,7 @@ $(function(){if($('.site-nav').length){
             fancyHeight = fancyScroll.offset().top + fancyScroll.innerHeight(),
             fancyScrollAmount = fancyScroll.scrollTop() + diff;
 
-		if($('body').hasClass('fixed')){
+		if($('body').hasClass('fixed') && !smamo_nav_fancy_manu_nav_animation_block){
 
 			fancyScroll.scrollTop(fancyScrollAmount);
 		}
@@ -23,6 +23,5 @@ $(function(){if($('.site-nav').length){
 
 		lastScrollTop = st;
         
-      }
     });
 }});
