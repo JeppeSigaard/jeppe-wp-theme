@@ -4,7 +4,6 @@ $(function(){if($('.site-nav').length){
         fancyScroll = $('.site-nav');
 
     $(window).on('scroll', function () {
-        console.log(lastScrollTop);
 
         var st = $(this).scrollTop(),
             diff = st - lastScrollTop,

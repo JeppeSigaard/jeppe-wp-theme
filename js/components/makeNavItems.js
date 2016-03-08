@@ -37,8 +37,8 @@ function makeNavItems(from,to,rep){
     
     newMenu.prepend('<li class="current-menu-item"><a class="menu-header" href="#'+headingID+'">'+headingTitle+'</a></li>');
     
-    if (rep === true) {$(to).replaceWith(newMenu); console.log('replacing')}
-    else{ newMenu.appendTo(to);console.log('not replacing')}
+    if (rep === true) {$(to).replaceWith(newMenu);}
+    else{ newMenu.appendTo(to);}
         
     newMenu.on('click',function(e){
         e.preventDefault();
