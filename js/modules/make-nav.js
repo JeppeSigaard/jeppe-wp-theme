@@ -1,7 +1,3 @@
-if($('body').hasClass('single-post')){
-    
+if($('body').hasClass('single-post')){    
     makeNavItems('.post-content','.site-nav .article-menu', true);
-    
-    console.log('checked');
-    
 }

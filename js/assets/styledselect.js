@@ -41,7 +41,6 @@ $('select').each(function(){
         $styledSelect.text($(this).text()).removeClass('active').addClass('success');
         $this.val($(this).attr('rel'));
         $list.hide();
-        //console.log($this.val());
     });
 
     $(document).click(function() {
