@@ -4,7 +4,7 @@ $(function(){if($('.site-nav').length){
         fancyScroll = $('.site-nav');
 
     $(window).on('scroll', function () {
-
+      if(smamo_nav_fancy_manu_nav_animation_block === false){
 
         var st = $(this).scrollTop(),
             diff = st - lastScrollTop,
@@ -24,6 +24,7 @@ $(function(){if($('.site-nav').length){
 		}
 
 		lastScrollTop = st;
+        
+      }
     });
-
 }});

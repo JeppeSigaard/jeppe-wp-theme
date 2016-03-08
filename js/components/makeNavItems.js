@@ -1,5 +1,3 @@
-var smamo_nav_fancy_manu_nav_animation_block = false;
-
 function makeUrlFromString(str){
     var ret = encodeURIComponent(str).replace(/\ /g,'').replace(/[^æøå\w -]+/g, '').replace(/ +/g, '-');
     return ret;
@@ -10,6 +8,7 @@ function makeNavItems(from,to,rep){
         to = $(to),
         heading = $('h1'),
         headingID = 'content',
+        headingTitle = heading.html();
         newMenu = $('<ul class="article-menu"></ul>'),
         count = 0;
     
@@ -20,15 +19,18 @@ function makeNavItems(from,to,rep){
         
         count ++;
         
+        
+        
         var elem = $(this),
             content = elem.html(),
             id = makeUrlFromString(content).substr(0, 10) + '-' + count;
             
+        
         if(elem.attr('data-title')){
             content = elem.attr('data-title');
         }
         
-        var li = $('<li></li>'),
+        var li = $('<li class="type-'+elem.context.localName+'"></li>'),
             a = $('<a href="#'+id+'">'+content+'</a>');
         
         elem.attr('id',id);
@@ -36,7 +38,7 @@ function makeNavItems(from,to,rep){
         li.appendTo(newMenu);
     });
     
-    newMenu.prepend('<li class="current-menu-item"><a class="menu-header" href="#'+headingID+'">'+'Læs om'+'</a></li>');
+    newMenu.prepend('<li class="current-menu-item"><a class="menu-header" href="#'+headingID+'">'+headingTitle+'</a></li>');
     
     if (rep === true) {$(to).replaceWith(newMenu); console.log('replacing')}
     else{ newMenu.appendTo(to);console.log('not replacing')}

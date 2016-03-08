@@ -1,3 +1,5 @@
+var smamo_nav_fancy_manu_nav_animation_block = false;
+
 // @koala-append 'assets/js.cookie.js';
 // @koala-append 'assets/waitUntilExists.js';
 // @koala-append 'assets/prism.js';

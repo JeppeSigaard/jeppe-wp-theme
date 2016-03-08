@@ -1,11 +1,13 @@
 .article-menu{
     padding: $base-margin $base-margin $base-margin*2;
+    background: white;
     
     a{
         display: block;
-        padding:5px 0;
+        position: relative;
+        padding:6px 0;
         font-size:90%;
-        line-height: 1.2;
+        line-height: 1.5;
         transition: color 120ms;
         
         &:hover{
@@ -13,9 +15,45 @@
         }
     }
     
+    .type-h3 a{ 
+        padding-left: 10px;
+    }
+    
+    .type-h4 a{
+        padding-left: 15px;
+    }
+    
+    .type-h5 a,
+    .type-h6 a{
+        padding-left: 20px;
+    }
+    
+    .type-h3 a:before,
+    .type-h4 a:before,
+    .type-h5 a:before,
+    .type-h6 a:before{
+        content: '';
+        display: block;
+        width: 2px;
+        background-color: $jeppe-light-3;
+        position:absolute;
+        left:0px;
+        top: 5px;
+        bottom: 5px;
+    }
+    
+    .type-h4 a:before{
+        left: 5px;
+    }
+    
+    .type-h5 a:before,
+    .type-h6 a:before{
+        left: 10px;
+    }
+    
     .menu-header{
         text-transform: uppercase;
         font-weight: 900;
-        font-size:150%;
+        font-size: 100%;
     }
 }
