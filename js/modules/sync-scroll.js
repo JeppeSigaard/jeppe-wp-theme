@@ -15,8 +15,6 @@ $(function(){if($('.site-nav').length){
 		if($('body').hasClass('fixed')){
 
 			fancyScroll.scrollTop(fancyScrollAmount);
-
-
 		}
 
 		else{
