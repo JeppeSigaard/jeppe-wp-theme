@@ -5,6 +5,6 @@
 	    <?php get_template_part('template-parts/side/tldr'); ?>
 	    <?php endif; ?>
 		<?php get_template_part('template-parts/side/main','menu'); ?>
-		<?php get_template_part('template-parts/side/author','box'); ?>
+		<?php get_template_part('template-parts/ads/sidebar-ad'); ?>
 	</div>
 </nav>
