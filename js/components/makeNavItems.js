@@ -31,7 +31,9 @@ function makeNavItems(from,to,rep){
             a = $('<a href="#'+id+'">'+content+'</a>');
         
         elem.attr('id',id);
+        
         a.appendTo(li);
+        
         li.appendTo(newMenu);
     });
     
@@ -47,14 +49,15 @@ function makeNavItems(from,to,rep){
             
             smamo_nav_fancy_manu_nav_animation_block = true;
             
+            $('body').removeClass('menu-out');
+            
             $('html,body').animate({scrollTop : $(t.attr('href')).offset().top - 75},300);
+            
             newMenu.find('.current-menu-item').removeClass('current-menu-item');
+            
             t.parent('li').addClass('current-menu-item');
             
-            setTimeout(function(){
-                smamo_nav_fancy_manu_nav_animation_block = false;
-                
-            },350);
+            setTimeout(function(){smamo_nav_fancy_manu_nav_animation_block = false;},350);
            
             
         }
