@@ -1,10 +1,3 @@
-<!-----------------------------------------------------:-:
-:-:                                                    :-:
-:-:                    hej@jeppe.io                    :-:
-:-:          Currently working @SmartMonkey            :-:
-:-:              https://smartmonkey.dk                :-:
-:-:                                                    :-:
-:-:------------------------------------------------------>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>

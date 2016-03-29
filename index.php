@@ -10,17 +10,24 @@ get_header();
 // 	Start wrapper
 get_template_part('template-parts/common/content','before');
 
+// Billeder (redirect)
+if ( is_attachment() ){
+    echo 'attachment';
+    global $post;
+    wp_redirect(get_permalink($post->post_parent));
+}
+
 // 	Home og front page
-if(is_home() || is_front_page()){require 'templates/home.php';}
+elseif(is_home() || is_front_page()){require 'templates/home.php';}
 
 //	Arkiver
-else if(is_archive() || is_category() ){require 'templates/archive.php';}
+elseif(is_archive() || is_category() ){require 'templates/archive.php';}
 
 //	Sider (post type page, dvs. i princippet også CPT'er)
-else if(is_page()){require 'templates/page.php';}
+elseif(is_page()){require 'templates/page.php';}
 
 //	Posts (post type post, dvs. i princippet også CPT'er)
-else if(is_single()){require 'templates/single.php';}
+elseif(is_single()){require 'templates/single.php';}
 
 // 	End wrapper
 get_template_part('template-parts/common/content','after');

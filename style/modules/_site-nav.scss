@@ -7,9 +7,9 @@ transition:right 0ms;
 .site-nav{
 	position:absolute;
 	background:$jeppe-black;
-	width:0;
 	height:calc(100vh + #{$top-nav-height});
-	right:-$site-nav-width;
+	right: - $site-nav-width - 10px;
+    width: $site-nav-width;
 	top:0;
 	z-index:10;
 	padding: $header-height+$top-nav-height 0;
